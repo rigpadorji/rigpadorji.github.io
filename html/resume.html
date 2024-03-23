@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel= "stylesheet" href= "../css/resume.css">
+</head>
+<body>
+<div  id="output"></div>
+
+<script>
+var queryString = window.location.search;
+var urlparams =  new URLSearchParams(queryString);
+var year = urlparams.get("year");
+var month = urlparams.get("month");
+var date = urlparams.get("date");
+var furigana = urlparams.get("furigana");
+var romaji = urlparams.get("romaji");
+var dodyear = urlparams.get("dobyear");
+var dobmonth = urlparams.get("dobmonth");
+var dobdate = urlparams.get("dobdate");
+var male = urlparams.get("male");
+var female = urlparams.get("female");
+var output = document.getElementById("output");
+output.innerHTML= "<div  class = headdiv>"+
+                                            "<div  class = hdiv1>"+
+                                              "履歴書"+
+                                              "</div>"+
+                                              
+                                              "<div  class = hdiv2>"+
+                                                year+"年"+ month + "月"+ date +"日" +
+                                              "</div>"+
+
+                                 "</div>"+
+                                 
+                                 
+                                 
+                                 "<div  class = namediv>"+
+                                             "<div  class = ndiv3>"+
+                                                   "フリガナ"+"&nbsp" +"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+furigana+
+                                              "</div>"+
+                                              
+                                              "<div  class = ndiv4>"+
+                                               "氏名"+"&nbsp"
+                                               +"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp"+romaji+
+                                              "</div>"+
+                                              
+                                              "<div class = dobdiv>"+　
+                                              　　　　　"<div class = 'dobdiv1'>"+
+                                                                       dodyear +"年"　+ dobmonth+　"月"　+　dobdate　+"日"　+
+                                                                  "</div>"+
+                                                                  "<div class = 'dobdiv2'>"+
+                                                                       male+
+                                                                   "</div>"+
+                                                 
+                                              "</div>"+
+                                              
+                                              
+                                              
+
+                                 "</div>"
+
+</script>
+
+<body>
+</html>
